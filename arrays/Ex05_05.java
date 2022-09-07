@@ -3,17 +3,16 @@ package arrays;
 public class Ex05_05 {
     public static void main(String[] args) {
         int sum = 0;
-        float avg = 0f;
+        float avg = 0;
 
-        int[] score = {100, 88, 100, 100, 90};
+        int[] score = {8, 10, 9, 9, 10};
 
-        for(int i = 0; i < score.length; i++) {
-            sum += score[i];
-        }
+        for(int scoreArr : score)
+            sum += scoreArr;
 
         avg = sum / (float)score.length;
 
-        System.out.println("총점: " + sum);
-        System.out.println("평균: " + avg);
+        System.out.println("sum = " + sum);
+        System.out.println("avg = " + avg);
     }
 }
