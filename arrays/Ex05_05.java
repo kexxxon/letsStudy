@@ -7,8 +7,8 @@ public class Ex05_05 {
 
         int[] score = {8, 10, 9, 9, 10};
 
-        for(int scoreArr : score)
-            sum += scoreArr;
+        for(int scoreElement : score)
+            sum += scoreElement;
 
         avg = sum / (float)score.length;
 
