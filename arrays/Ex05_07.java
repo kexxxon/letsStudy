@@ -11,10 +11,19 @@ public class Ex05_07 {
 
         System.out.println();
 
+        // repeat 100 times
         for(int i = 0; i < 100; i++) {
             int n = (int) (Math.random() * 10);
             int tmp = numArr[0];
             numArr[0] = numArr[n];
+            numArr[n] = tmp;
+        }
+
+        // repeat as long as numArr.length
+        for(int i = 0; i < numArr.length; i++) {
+            int n = (int) (Math.random() * 10);
+            int tmp = numArr[i];
+            numArr[i] = numArr[n];
             numArr[n] = tmp;
         }
 
